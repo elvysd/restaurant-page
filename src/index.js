@@ -1,27 +1,24 @@
 import _ from 'lodash';
 import './style.css';
-import Icon from './image1.jpg';
+import Icon from './image.jpg';
+import Image1 from './image1.jpg';
+function component() {
+    return;
+}
 
-console.log("wqeqweqw");
+function component2() {
+    const element2 = document.createElement('div');
+    element2.classList.add('images');
 
+    const myIcon = new Image();
+    myIcon.src = Icon;
+    element2.appendChild(myIcon);
 
- function component() {
-   const element = document.createElement('div');
-
-   // Lodash, now imported by this script
-   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  element.classList.add('hello');
-
-
-  // Add the image to our existing div.
-  const myIcon = new Image();
-  myIcon.src = Icon;
-  element.appendChild(myIcon);
-
-
-
-   return element;
- }
-
- document.body.appendChild(component());
+    const myImage1 = new Image();
+    myImage1.src = Image1;
+    element2.appendChild(myImage1);
+    return element2;
+  }
+  
+  component();
+  document.body.appendChild(component2());

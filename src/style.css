@@ -1,13 +1,45 @@
 @font-face {
     font-family: 'MyFont';
-    src: url('./my-font.woff2') format('woff2'),
-      url('./my-font.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-}
+    src: url('./Oswald-Regular.ttf') format('ttf');
+    font-style:normal;
+  }
 
 .hello {
     color: red;
-    background: url('./icon.png');
-    font-family: 'MyFont';
+    font-family: 'Bebas Neue';
+    text-align: center;
+    background-color: black;
+    padding: 25% 25% 25% 25%;
+    font-size: 250%;
   }
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+.break {
+    color: red;
+    background-color: transparent;
+    border-color:red;
+    border-top: 1px solid red;
+}
+.images {
+    width: 100%;
+}
+#menu {
+    color: red;
+    font-family: 'Bebas Neue';
+    background-color: black;
+    display: flex;
+}
+#menu > li {
+    padding: 0 5% 0 5%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 200%;
+}
